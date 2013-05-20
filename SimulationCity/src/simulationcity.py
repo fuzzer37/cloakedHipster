@@ -1,8 +1,7 @@
+
 #Created by Colin Murphy
 #You are free to distribute or change this code as you wish, but you may not sell it
-#TODO:
-#    add population
-#    add tax system based on population
+#    fix the tax system. Too much money, too few people
 #    get rid of a>b>c>d>e progression and change to a command based program
 #    use random numbers from the random library
 from random import randint
@@ -17,16 +16,12 @@ i = 0
 
 while i==i:
     print "Welcome to SimCity CLI version"
-    print `res_total` + " residential squares"
-    print `com_total` + " commercial squares"
-    print  `ind_total` + " industrial squares"
     #start residential buy
     print "You have " + `money` + " money"
     print "How much residential, commercial, and industrial land do you want to buy?"
     print "Residential is 10 per square"
     res_b = int(raw_input("How much do you want to buy?"))
     money = money-(10*res_b)
-    print `money`
     res_total = res_total +res_b
         
                 
@@ -35,7 +30,6 @@ while i==i:
     print "Commercial is 20 per square"
     com_b = int(raw_input("How much do you want to buy?"))
     money = money-(20*com_b)
-    print `money`
     com_total = com_total +com_b
             
     #start industrial buy 
@@ -87,20 +81,4 @@ while i==i:
     #money += res_population * 1
         
         
-        
-        
-        
-        
-        
     i+=1
-    
-
-
-        
-        
-        
-        
-        
-        
-        
-        
