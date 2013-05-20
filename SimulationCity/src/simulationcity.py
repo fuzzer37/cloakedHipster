@@ -4,6 +4,7 @@
 #    fix the tax system. Too much money, too few people
 #    get rid of a>b>c>d>e progression and change to a command based program
 #    use random numbers from the random library
+#    add in an if statement so that people can just hit enter and the program will register it as zero
 from random import randint
 money = 100
 res_total = 0
